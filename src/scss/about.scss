@@ -1,0 +1,252 @@
+.introduce {
+    width: 100%;
+
+    &-wrapper {
+        max-width: 1400px;
+
+        width: 100%;
+        padding: 20px;
+
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+.auto_typed {
+    font-size: 1.9em;
+    color: rgb(135, 80, 150);
+}
+
+.photo {
+    width: 70%;
+
+    transition: all .9s ease-in-out .3s;
+}
+
+.img-photo {
+    width: 100%;
+    height: 100%;
+}
+
+.div_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.about {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &_greetings {
+        padding: 20px 0 30px 0;
+        height: 250px;
+
+        font-size: 1.3rem;
+
+        transition: all .9s ease-in .2s;
+        transform: translate(100%, 0);
+        opacity: 0;
+
+        &>h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    &_text {
+        font-size: 1.4rem;
+        font-weight: normal;
+
+        &--name {
+            transition: all .9s ease-in .4s;
+            transform: translate(100%, 0);
+            opacity: 0;
+        }
+
+        &_list {
+            padding: 20px;
+
+            line-height: 3rem;
+            font-size: 1.1rem;
+
+
+            & > li {
+                list-style:inside;
+            }
+        }
+    }
+
+    &_resume {
+        position: relative;
+        padding: 30px 0;
+
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2rem;
+ 
+        transition: all .8s ease-in 1.2s;
+        transform: translate(0, 100%);
+        opacity: 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 65%;
+            left: 0;
+
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: rgba(234, 254, 247);
+            transition: all .3s ease-in;
+            opacity: 0;
+        }
+
+        &:hover:after {
+            opacity: 1;
+        }
+        
+    }
+}
+
+.anim-show--vert {
+    transform: translate(0px, 120%);
+    opacity: 0;
+}
+
+.anim-show {
+    transform: translate(120%, 0px);
+    opacity: 0;
+    margin-bottom: 30px;
+
+    &:nth-child(1) {
+        margin: 30px 0;
+    
+        transition: all .8s ease-in .6s;
+    }
+    
+    &:nth-child(2) {
+        transition: all .8s ease-in .8s;
+    }
+    
+    &:nth-child(3) {
+        transition: all .8s ease-in 1s;
+    }
+}
+
+.anim-show--vert.animation,
+.animation .anim-show--vert {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.anim-show.animation,
+.animation .anim-show {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.animation {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+@media (min-width: 567px) {
+    .auto_typed {
+        font-size: 2.1em;
+    }
+
+    .about {
+        &_greetings {
+            height: auto;
+        }
+
+        &_text {
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+
+@media (min-width: 567px) and (max-width: 767px) {
+    .photo {
+        width: 50%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 856px) {
+    .photo {
+        width: 100%;
+    }
+
+    .anim-show {
+        margin-bottom: 20px;
+
+        &:nth-child(1) {
+            margin: 20px 0;
+        
+            transition: all .8s ease-in .6s;
+        }
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1150px) {
+    .about {
+        &_greetings {
+            height: 250px;
+        }
+    }
+
+    .about_text_list {
+        line-height: 1.5rem;
+
+        &__item {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .introduce {
+        height: calc(100vh - 70px);
+
+        display: flex;
+        justify-content: center;
+
+        &-wrapper {
+            display: flex;
+        }
+    }
+
+    .about {
+        &_text {
+            font-size: 1.6rem;
+
+            &_list {
+                padding: 0 20px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1150px) {
+    .auto_typed {
+        font-size: 2.6em;
+    }
+
+    .about_text_list {
+        line-height: 2.5rem;
+    }
+
+}

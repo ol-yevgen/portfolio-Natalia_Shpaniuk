@@ -1,0 +1,48 @@
+@import "fonts";
+
+$textColor: rgba(234, 254, 247);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+    background: #26232b;
+    color: $textColor;
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    min-height: 100%;
+
+    display: grid;
+    grid-template: minmax(auto, 70px) 1fr auto / 1fr;
+
+    overflow: hidden;
+}
+
+@import "header";
+@import "main";
+@import "about";
+@import "portfolio";
+@import "swiper";
+@import "../../node_modules/swiper/swiper-bundle";
+@import "arrowToTop";
+@import "footer";

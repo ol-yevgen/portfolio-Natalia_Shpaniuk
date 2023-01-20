@@ -1,0 +1,83 @@
+$color: #26232b;
+
+.arrowToTop {
+    position: fixed;
+    right: 4%;
+    bottom: 21%;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 37px;
+    height: 37px;
+    
+    border: 5px solid $color;
+    border-radius: 50%;
+
+    transition: all .3s;
+    opacity: 0;
+    overflow: hidden;
+
+    &:hover {
+        animation: 1.5s linear 1s infinite arrowHover;
+    }
+}
+
+.arrowTop {
+    border: solid $color;
+    border-width: 0 3px 3px 0;
+    border-radius: 3px;
+
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-135deg);
+
+    animation: 3.5s ease 1s infinite arrowMove;
+}
+
+.show {
+    opacity: 1;
+}
+
+@media (min-width: 767px) {
+    .arrowToTop {
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrowTop {
+        padding: 6px;
+    }
+}
+
+@keyframes arrowMove {
+    0% {
+        transform: translateY(30px) rotate(-135deg);
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-20px) rotate(-135deg);
+        opacity: 0;
+    }
+}
+
+@keyframes arrowHover {
+    0% {
+        scale: 100%;
+    }
+
+    50% {
+        scale: 130%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+}

@@ -1,0 +1,152 @@
+$footer-textColor: rgba(234, 254, 247, 1);
+
+.contacts {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    background: #26232b;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        
+        width: 100%;
+        padding: 15px 20px;
+
+        max-width: 1400px;
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    &_link {
+        display: flex;
+        ;
+        justify-content: center;
+        align-items: center;
+        color: $footer-textColor;
+
+        margin: 10px 0;
+
+        &:hover {
+            color: rgb(214, 251, 238);
+            scale: 1.1;
+        }
+    }
+
+    &_icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    &_icon-phone {
+        margin-right: 10px;
+    }
+
+    &_icon-linkedin {
+        padding-bottom: 5px;
+    }
+}
+
+.contacts_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+
+    &_items {
+        list-style: none;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        & > .footer_nav {
+            color: $footer-textColor;
+        }
+
+        & a {
+            border-bottom: 3px solid transparent;
+
+            &:hover {
+                border-bottom: 3px solid $footer-textColor;
+            }
+        }
+    }
+
+    &_item {
+        border-bottom: 3px solid transparent;
+        transition: all .3s;
+
+        &:hover {
+            border-bottom: 3px solid $footer-textColor;
+        }
+    }
+}
+
+.social_icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contact_item {
+    display: none;
+    list-style: none;
+}
+
+.phone {
+    display: block;
+    font-size: 0.87rem;
+}
+
+.contact_social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+}
+
+h5 {
+    font-size: 1.05rem;
+}
+
+@media (min-width: 767px) {
+    .contacts {
+        &_nav {
+            padding-left: 4%;
+        }
+
+        &_list {
+            width: 100%;
+        }
+
+        &_icon {
+            margin-right: 10px;
+        }
+
+        &_icon-linkedin {
+            margin-right: 10px;
+        }
+    }
+
+    .contact_item {
+        display: flex;
+        align-items: center;
+    }
+
+    .phone {
+        font-size: 1rem;
+    }
+}
