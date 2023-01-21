@@ -25,7 +25,7 @@ export function siteLang() {
         },
         "about_text": {
             "ua": 
-            `<h3 class="about_text--name anim-item">Ваш ідеальний креативний PR-менеджер, оскільки:</h3>
+            `<h2 class="about_text--name anim-item">Ваш ідеальний креативний PR-менеджер, оскільки:</h2>
             <ul class="about_text_list anim-item">
                 <li class="anim-show">4 роки працюю й удосконалююсь у піарі та журналістиці, 2 роки — у диджиталі;</li>
                 <li class="anim-show">не боюсь дедлайнів і фрази: «Мені через годину потрібен реліз» :)</li>
