@@ -512,9 +512,9 @@ main {
 }
 
 .portfolio-item--show {
-  -webkit-transition: all 1.7s ease-in-out 0.2s;
-  -o-transition: all 1.7s ease-in-out 0.2s;
-  transition: all 1.7s ease-in-out 0.2s;
+  -webkit-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
   -webkit-transform: translate(0px, 120%);
       -ms-transform: translate(0px, 120%);
           transform: translate(0px, 120%);

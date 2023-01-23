@@ -28,7 +28,7 @@ $darkColor: #26232b;
         }
 
         &--show {
-            transition: all 1.7s ease-in-out .2s;
+            transition: all 1.5s ease-in-out;
             transform: translate(0px, 120%);
             opacity: 0;
         }

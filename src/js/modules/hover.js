@@ -33,7 +33,7 @@ export function hoverEffect() {
                     target.parentNode.appendChild(sliderTextWrapper);
                     sliderTextWrapper.appendChild(sliderText);
     
-                    target.style.opacity = '.3';
+                    target.style.opacity = '.1';
                 })
     
                 img.addEventListener('mouseout', (e) => {
