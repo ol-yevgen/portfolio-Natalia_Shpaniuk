@@ -53,6 +53,12 @@ $color: #26232b;
     }
 }
 
+@media (max-height: 767px) {
+    .arrowToTop {
+        bottom: 27%;
+    }
+}
+
 @keyframes arrowMove {
     0% {
         transform: translateY(30px) rotate(-135deg);

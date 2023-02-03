@@ -2055,3 +2055,17 @@ h5 {
     margin-bottom: 10px;
   }
 }
+
+@media (max-height: 767px) {
+  .introduce {
+    height: 17%;
+  }
+
+  .portfolio-item {
+    height: auto;
+  }
+
+  .arrowToTop {
+    bottom: 27%;
+  }
+}

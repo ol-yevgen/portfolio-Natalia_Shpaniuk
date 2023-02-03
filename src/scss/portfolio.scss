@@ -123,3 +123,9 @@ $darkColor: #26232b;
         padding: 0;
     }
 }
+
+@media (max-height: 767px) {
+    .portfolio-item {
+        height: auto;
+    }
+}
