@@ -8,18 +8,17 @@ import * as lang from "./modules/siteLang.js";
 import * as linkAnimation from "./modules/linkAnimation.js";
 import * as moveAnimation from "./modules/moveAnimation.js";
 
-// document.addEventListener("DOMContentLoaded", () => {
-
-// })
-myFunction.isWebp();
-typed.typedText();
-scroll.sctollToSection();
-burger.burger();
-hover.hoverEffect();
-toTop.toTopArrow();
-lang.siteLang();
-linkAnimation.linkAnimation();
-moveAnimation.moveAnimation();
+document.addEventListener("DOMContentLoaded", () => {
+    myFunction.isWebp();
+    typed.typedText();
+    scroll.sctollToSection();
+    burger.burger();
+    hover.hoverEffect();
+    toTop.toTopArrow();
+    lang.siteLang();
+    linkAnimation.linkAnimation();
+    moveAnimation.moveAnimation();
+})
 
 import Swiper, { Lazy, Navigation, Pagination } from "swiper";
 
