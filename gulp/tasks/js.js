@@ -9,6 +9,7 @@ export const js = () => {
                 message: "Error: <%= error.message %>"
             })
         ))
+
         .pipe(webpack({
             mode: app.isBuild ? "production" : "development",
             output: {
